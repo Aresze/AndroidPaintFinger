@@ -1,0 +1,39 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainlayout">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view"/>  
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:min = "20"
+        android:max="80"
+        android:progress="20"
+        android:id="@+id/brushSize"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/brushColor"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:id="@+id/clear"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Undo"
+        android:id="@+id/undo"/>
+  </LinearLayout>
+
+</RelativeLayout>
